@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/icon.png" type="image/x-icon" />
@@ -10,39 +9,47 @@
   </head>
   <body>
     <header>
+      <!-- Header as a whole -->
       <nav class="topbar">
-        <p><a href="/" class="header">Parash</a></p>
+        <!-- My name -->
+        <p><a href="/" class="head">Parash</a></p>
+        <!-- Navigaion links -->
         <ul class="nav">
           <li class="navlist">
-            <a href="#projects">Projects</a>
-            <a href="/">Contact</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contacts</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
+      <!-- Work in progress text(Remove after website is completed) -->
       <section class="wiptext">
-        <p class="wip">Work In Progress Website</p>
+        <p class="wip">Will add about page next</p>
       </section>
     </main>
-
+    <!-- The main bosy shown when homepage is loaded -->
     <div class="mainbody">
-      <p>
-        Hi, my name is Parash Phuyal and I'm a general medicine student. I love
-        doing random stuffs like I am doing right now. This is a website made by
-        me for me.
-        <br /><br />
-        If you're interested in learning more about me, please feel free to
-        <a href="mailto:parashphuyal809@gmail.com">mail me</a> contact me. I
-        would love to hear from you! <br /><br />
-        Below are some stuffs you might want to see....
-      </p>
-      <hr color="beige" />
-    </div>
-    <div id="projects">
-      <p>
-        <a href="num-identifier.html">Placeholder</a>
-      </p>
+      <div class="bodytext">
+        <!-- Text on right on pc and above on mobile -->
+        <p>Hello my name is</p>
+        <p id="nametext">Parash Phuyal.</p>
+        <p id="smalltext">I am a medical student</p>
+      </div>
+      <div class="mainimg">
+        <!-- My homepage image -->
+        <img
+          id="imgdesktop"
+          src="images/parash-removebg-preview.png"
+          alt="parashphuyal"
+        />
+        <img
+          id="imagemain"
+          width="100%"
+          src="images/parash-removebg-preview.png"
+          alt="parashphuyal"
+        />
+      </div>
     </div>
   </body>
 </html>
