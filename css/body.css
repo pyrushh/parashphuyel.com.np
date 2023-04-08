@@ -1,0 +1,28 @@
+/* Style the main body section */
+.mainbody {
+  padding: 0 18%; /* Add padding to the sides */
+  display: flex; /* Use flexbox to display the elements within the mainbody */
+  justify-content: space-around; /* Add space between the elements */
+  flex-direction: row; /* Set flex direction to row */
+}
+
+/* Hide the main image for desktop */
+#imagemain {
+  display: none;
+}
+
+/* Style the body text section */
+.bodytext {
+  color: white; /* Set text color */
+  font-size: 3rem; /* Set font size */
+  padding-top: 15%; /* Add top padding */
+  text-align: center;
+}
+#smalltext {
+  font-size: 1rem;
+  text-align: center;
+  color: #a5a5a8;
+}
+#nametext {
+  text-align: center;
+}
