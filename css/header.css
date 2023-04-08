@@ -5,6 +5,7 @@ header {
   box-shadow: 0px 5px 5px #25252b; /* Add a subtle box shadow effect */
   position: sticky; /* Set position to sticky so that the header stays fixed on top while scrolling */
   top: 0; /* Set top position to 0 */
+  font-family: "Inter", sans-serif;
 }
 
 /* Style the topbar element within the header */
@@ -55,4 +56,10 @@ header {
   background-color: #25252b; /* Set background color */
   color: #b0b0b1; /* Set text color */
   padding: 5px 0 6px; /* Add padding */
+  font-family: "Open Sans", sans-serif;
+}
+.wiptext a {
+  text-decoration: underline;
+  background-color: #25252b;
+  color: #0098ff;
 }
