@@ -1,29 +1,51 @@
-/* Style the main body section */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 .mainbody {
-  padding: 0 18% 20px 18%; /* Add padding to the sides */
-  display: flex; /* Use flexbox to display the elements within the mainbody */
-  justify-content: space-around; /* Add space between the elements */
-  flex-direction: row; /* Set flex direction to row */
+  margin-top: 50px;
+  padding: 0 8% 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-/* Hide the main image for desktop */
 #imagemain {
   display: none;
 }
-
-/* Style the body text section */
+#imgdesktop {
+  background-color: black;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+  width: 90%;
+  margin-top: 5%;
+  top: 0;
+  z-index: 97;
+}
 .bodytext {
-  color: white; /* Set text color */
-  font-size: 3rem; /* Set font size */
-  padding-top: 15%; /* Add top padding */
+  color: var(--txtnormal);
+  font-size: 51px;
+  padding-top: 15%;
   font-family: "Open Sans", sans-serif;
   text-align: center;
+}
+#hello {
+  color: var(--txtmain);
+  font-weight: 400;
+  line-height: 61px;
+  text-transform: uppercase;
+  font-family: "Opne Sans", sans-serif;
+}
+#nametext {
+  color: var(--txtmain);
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  font-family: "Opne Sans", sans-serif;
 }
 #smalltext {
   font-size: 1rem;
   text-align: center;
-  color: #a5a5a8;
+  color: var(--txtnormal);
 }
+
 #nametext {
   text-align: center;
 }
