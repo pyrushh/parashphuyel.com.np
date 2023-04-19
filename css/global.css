@@ -5,14 +5,19 @@
   background-color: var(--background);
   box-sizing: border-box;
 }
-
+::selection {
+  color: var(--txtnormal);
+  background: var(--txtmain);
+}
 @media (max-width: 720px) {
   header {
     padding: 10px 6% 0;
     display: flex;
     flex-direction: column;
   }
-
+  #smalltext {
+    font-size: 0.8rem;
+  }
   #imagemain {
     justify-content: center;
     display: block;
