@@ -2,80 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/var.css" />
-    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/headerglobal.css" />
     <link rel="stylesheet" href="css/body.css" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <script src="js/index.js" defer></script>
+
     <title>Parash</title>
-    <meta
-      name="description"
-      content="Official website of Parash Phuyel. Here you will find all the info regarding me, my work, ways to contact me and also some of my own thoughts in the form of blogs."
-    />
   </head>
   <body>
-    <header>
-      <nav class="topbar">
-        <p>
-          <a href="/" class="head" title="Homepage"
-            ><i class="fa-sharp fa-solid fa-house"></i
-          ></a>
-        </p>
-        <ul class="nav">
-          <li class="navlist">
-            <a href="about" id="about" title="About"
-              ><i class="fa-solid fa-user"></i
-            ></a>
-            <a href="contact" id="contact" title="Contact"
-              ><i class="fa-solid fa-address-book"></i
-            ></a>
+    <header class="header">
+      <nav class="nav">
+        <a href="/" class="logo" title="Parash"> Parash </a>
+        <ul class="menu">
+          <li>
+            <a href="about.html" class="links">About</a>
+          </li>
+          <li>
+            <a href="#" class="links">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="links">Blogs</a>
           </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
-
-    <div class="mainbody">
-      <div class="bodytext">
-        <p id="hello">Hello my name is</p>
-        <p id="nametext">Parash Phuyel.</p>
-        <p id="smalltext">
-          I am a medical student. I made this website as a personal project
-          while lerning web development.
-        </p>
+    <div class="overlay"></div>
+    <main class="body-container">
+      <div class="body">
+        <div class="bodytext">
+          <div class="text">Hello! My name is</div>
+          <div class="text" id="name">Parash Phuyel.</div>
+        </div>
+        <div class="image-pc">
+          <img
+            src="images/parash-removebg-preview.png"
+            alt="parash"
+            id="pcimg"
+          />
+        </div>
       </div>
-      <div class="mainimg">
-        <!-- My homepage image -->
-        <img
-          id="imgdesktop"
-          src="images/parash-removebg-preview.png"
-          alt="parashphuyal"
-        />
-        <!-- Image on mobile -->
-        <img
-          id="imagemain"
-          width="100%"
-          src="images/parash-removebg-preview.png"
-          alt="parashphuyal"
-        />
-      </div>
-    </div>
+    </main>
   </body>
 </html>

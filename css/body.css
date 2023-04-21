@@ -1,53 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
-.mainbody {
-  margin-top: 50px;
-  padding: 0 8% 20px 8%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+.body-container {
+  margin: var(--pcPadding);
+  width: auto;
+  /* background-color: black; */
 }
-
-#imagemain {
+.phone {
   display: none;
 }
-#imgdesktop {
-  background-color: black;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+.body {
+  padding-top: 70px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  transition: 1s ease;
+}
+#pcimg {
+  width: 30vw;
+  background-color: var(--comp);
   border-radius: 30px;
-  width: 90%;
-  margin-top: 5%;
-  top: 0;
-  z-index: 97;
-}
-.bodytext {
-  color: var(--txtnormal);
-  font-size: 51px;
-  padding-top: 15%;
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
 }
 
-#hello {
-  color: var(--txtmain);
-  font-weight: 400;
-  /* line-height: 50px; */
-  text-transform: uppercase;
-  font-family: "Opne Sans", sans-serif;
-  margin-bottom: 5px;
-}
-#nametext {
-  color: var(--txtmain);
-  font-weight: 700;
-  /* line-height: 75px; */
-  text-transform: uppercase;
-  font-family: "Opne Sans", sans-serif;
-}
-#smalltext {
-  font-size: 1rem;
+.text {
+  color: var(--text-color);
   text-align: center;
-  color: var(--txtnormal);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.4rem;
 }
-
-#nametext {
-  text-align: center;
+@media (max-width: 800px) {
+  .body {
+    flex-direction: column;
+  }
+  #pcimg {
+    display: block;
+  }
+  .body-container {
+    margin: var(--phonePadding);
+    width: auto;
+  }
+  #name {
+    padding-bottom: 16px;
+  }
+  .text {
+    font-size: 2.6rem;
+    /* padding-bottom: 16px; */
+  }
+  #pcimg {
+    width: 85vw;
+  }
 }

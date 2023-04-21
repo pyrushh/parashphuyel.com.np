@@ -2,69 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/var.css" />
-    <link rel="stylesheet" href="css/secondary/header.css" />
+    <link rel="stylesheet" href="css/headerglobal.css" />
     <link rel="stylesheet" href="css/body.css" />
-    <link rel="stylesheet" href="css/secondary/aboutbody.css" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <script src="js/index.js" defer></script>
+
     <title>About - Parash</title>
   </head>
   <body>
-    <header>
-      <nav class="topbar">
-        <p>
-          <a href="https://parashphuyel.com.np/" class="head" title="Homepage"
-            ><i class="fa-sharp fa-solid fa-house"></i
-          ></a>
-        </p>
-        <ul class="nav">
-          <li class="navlist">
-            <a href="about" id="about" title="About"
-              ><i class="fa-solid fa-user"></i
-            ></a>
-            <a href="contact" id="contact" title="Contact"
-              ><i class="fa-solid fa-address-book"></i
-            ></a>
+    <header class="header">
+      <nav class="nav">
+        <a href="https://parashphuyel.com.np" class="logo" title="Parash">
+          Parash
+        </a>
+        <ul class="menu">
+          <li>
+            <a href="about.html" class="links">About</a>
+          </li>
+          <li>
+            <a href="#" class="links">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="links">Blogs</a>
           </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
-    <div class="about-title">
-      <p>About Me</p>
-    </div>
-    <div class="about-paragraph">
-      <p>
-        My name is Parash Phuyal and I am a medical personnel. I started growing
-        intrest in making small websites when I stumbled uopn a video of a guy
-        making a portfolio website.
-      </p>
-    </div>
-    <div class="personalinfo">
-      <h1>Personal Info</h1>
-    </div>
-    <div class="infos">
-      <div id="name">Name: Parash Phuyal</div>
-      <div id="age">Age: 20 Years</div>
-      <div id="nationality">Nationality: Nepali</div>
-    </div>
+    <div class="overlay"></div>
   </body>
 </html>
