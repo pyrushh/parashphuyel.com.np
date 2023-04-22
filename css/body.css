@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 .body-container {
   margin: var(--pcPadding);
-  width: auto;
-  /* background-color: black; */
   padding-bottom: 4rem;
-  /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); */
 }
+/* dont display these on pc */
 .phone {
   display: none;
 }
@@ -29,24 +28,22 @@
   font-size: 2.8rem;
 }
 @media (max-width: 800px) {
-  .body {
-    flex-direction: column;
-  }
-  #pcimg {
-    display: block;
-  }
   .body-container {
     margin: var(--phonePadding);
     width: auto;
+  }
+  .body {
+    height: 520px;
+    flex-direction: column;
+  }
+  #pcimg {
+    width: 60vw;
+    display: block;
   }
   #name {
     padding-bottom: 16px;
   }
   .text {
     font-size: 2.6rem;
-    /* padding-bottom: 16px; */
-  }
-  #pcimg {
-    width: 85vw;
   }
 }

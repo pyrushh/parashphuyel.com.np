@@ -1,24 +1,30 @@
-const hamburger = document.querySelector(".hamburger");
-const menu = document.querySelector(".menu");
-const overlay = document.querySelector(".overlay");
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/sw.js")
+    .then(() => {
+      console.log("Service worker registered successfully");
+    })
+    .catch((error) => {
+      console.log("Error registering service worker:", error);
+    });
+}
+
+const hamburger = document.querySelector(".hamburger"); //selects the hamburger
+const menu = document.querySelector(".menu"); //menu selector. see css for info about menu
 
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  menu.classList.toggle("active");
-  overlay.classList.toggle("active");
+  hamburger.classList.toggle("active"); //activates the .active class for the hamburger
+  menu.classList.toggle("active"); //activates the .active class for the menu
 });
 
-overlay.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  menu.classList.remove("active");
-  overlay.classList.remove("active");
-});
+//found out if single thing fucks up js fails. please dont shit on my code
+
 window.addEventListener("scroll", function () {
+  //scroll to chaeng color. idk hwo any of this work but it does
   const header = document.querySelector("header");
   const scrollTop = window.scrollY;
 
-  if (scrollTop > 100) {
-    // Change 100 to the desired scroll distance
+  if (scrollTop > 10) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
