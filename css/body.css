@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 .body-container {
   margin: var(--pcPadding);
   width: auto;
   /* background-color: black; */
+  padding-bottom: 4rem;
+  /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); */
 }
 .phone {
   display: none;
@@ -22,8 +25,8 @@
 .text {
   color: var(--text-color);
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.4rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.8rem;
 }
 @media (max-width: 800px) {
   .body {
