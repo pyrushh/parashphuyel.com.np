@@ -1,17 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .about {
-  width: 80vw auto;
   display: flex;
   flex-direction: column;
-  /* background-color: var(--comp); */
   margin: var(--pcPadding);
-  /* background-color: aliceblue; */
   padding-top: 3px;
   padding-bottom: 10px;
 }
 .aboutcontainer {
   background-color: var(--comp);
+  padding: 40px 0px;
 }
 .about-header {
   display: flex;
@@ -32,7 +30,7 @@
   font-size: 1rem;
   font-weight: lighter;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .about {
     margin: var(--phonePadding);
   }

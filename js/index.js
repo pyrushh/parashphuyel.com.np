@@ -1,14 +1,3 @@
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/sw.js")
-    .then(() => {
-      console.log("Service worker registered successfully");
-    })
-    .catch((error) => {
-      console.log("Error registering service worker:", error);
-    });
-}
-
 const hamburger = document.querySelector(".hamburger"); //selects the hamburger
 const menu = document.querySelector(".menu"); //menu selector. see css for info about menu
 

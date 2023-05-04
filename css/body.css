@@ -27,17 +27,67 @@
   font-family: "Rubik", sans-serif;
   font-size: 2.8rem;
 }
+.contacts {
+  display: flex;
+  padding-bottom: 200px;
+  margin: var(--pcPadding);
+  flex-direction: column;
+  color: var(--text-color);
+  margin-top: 12px;
+  font-family: "Rubik", sans-serif;
+}
+.contact-text {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+.contact-lists ul li {
+  list-style: none;
+}
+.contact-lists ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin: 0% 35%; */
+}
+.contact-lists ul li a {
+  text-decoration: none;
+  padding: 0px 20px 0px 20px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  transition: 0.2s ease-out;
+}
+.contact-lists ul li a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 800px) {
   .body-container {
     margin: var(--phonePadding);
     width: auto;
   }
+  .contact-lists ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-lists ul li {
+    padding: 10px;
+    /* width: 100vw; */
+    display: block;
+  }
   .body {
     height: 520px;
     flex-direction: column;
   }
+  .contacts {
+    height: 40vh;
+    padding: var(--phonePadding);
+  }
   #pcimg {
-    width: 60vw;
+    border-radius: 50%;
+    width: 70vw;
     display: block;
   }
   #name {
