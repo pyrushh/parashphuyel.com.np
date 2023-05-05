@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 .body-container {
-  margin: var(--pcPadding);
+  padding: var(--pcPadding);
   padding-bottom: 4rem;
 }
 /* dont display these on pc */
@@ -9,14 +9,16 @@
   display: none;
 }
 .body {
+  max-width: 1000px;
+  margin: 0 auto;
   padding-top: 70px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   transition: 1s ease;
 }
 #pcimg {
-  width: 30vw;
+  width: 70%;
   background-color: var(--comp);
   border-radius: 30px;
 }
@@ -30,7 +32,7 @@
 .contacts {
   display: flex;
   padding-bottom: 200px;
-  margin: var(--pcPadding);
+  padding: var(--pcPadding);
   flex-direction: column;
   color: var(--text-color);
   margin-top: 12px;
@@ -64,8 +66,8 @@
 }
 @media (max-width: 800px) {
   .body-container {
-    margin: var(--phonePadding);
-    width: auto;
+    padding: var(--phonePadding);
+    width: 0 auto;
   }
   .contact-lists ul {
     flex-direction: column;
@@ -77,21 +79,30 @@
     /* width: 100vw; */
     display: block;
   }
+  /* .contact-lists ul li a {
+    text-decoration: underline;
+  } */
+
   .body {
-    height: 520px;
+    /* height: 520px; */
     flex-direction: column;
+    /* flex-direction: column; */
   }
   .contacts {
     height: 40vh;
     padding: var(--phonePadding);
   }
+  .image-pc {
+    padding-bottom: 3rem;
+  }
   #pcimg {
+    /* padding-bottom: 20px; */
     border-radius: 50%;
-    width: 70vw;
-    display: block;
+    width: 60vw;
+    /* display: block; */
   }
   #name {
-    padding-bottom: 16px;
+    padding-bottom: 4rem;
   }
   .text {
     font-size: 2.6rem;
