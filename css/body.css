@@ -9,16 +9,16 @@
   display: none;
 }
 .body {
+  display: flex;
   max-width: 1000px;
   margin: 0 auto;
   padding-top: 70px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  display: flex;
   transition: 1s ease;
 }
 #pcimg {
-  width: 70%;
+  width: 80%;
   background-color: var(--comp);
   border-radius: 30px;
 }

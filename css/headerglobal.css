@@ -88,6 +88,7 @@ body {
   font-size: 1.2rem;
   color: var(--text-color);
   transition: 0.2s ease-out;
+  text-decoration: none;
 }
 
 .links:hover {
