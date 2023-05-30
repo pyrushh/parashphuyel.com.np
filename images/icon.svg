@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600px" height="600px" viewBox="0 0 200 200" style="overflow:hidden!important;">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120px" height="140px" viewBox="0 0 200 200" style="overflow:hidden!important;">
   <defs id="SvgjsDefs1007">
     <radialGradient id="SvgjsRadialGradient2904" cx="100" cy="114" r="41" gradientUnits="userSpaceOnUse" class="svga-on-canvas-facehighlight-gradient-single-0">
       <stop id="SvgjsStop2905" stop-opacity="0.5" stop-color="#ffe4d6" offset="0"/>
@@ -110,7 +110,7 @@
   </defs>
   <g id="svga-group-wrapper">
     <g id="svga-group-backs-single">
-      <path id="SvgjsPath3779" d="M225 225H-25V-25h250V225z" fill="#ecf0f1" stroke-width="none" opacity="1"/>
+      <path id="SvgjsPath3779" d="M225 225H-25V-25h250V225z" fill="#ecf0f1" stroke-width="none" opacity="0"/>
     </g>
     <g id="svga-group-humanwrap-move" transform="matrix(1,0,0,1,-2,6)">
       <g id="svga-group-humanwrap" transform="matrix(1,0,0,1,0,0)">

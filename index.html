@@ -3,61 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/headerglobal.css" />
-    <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/body.css" />
-    <script src="js/index.js" defer></script>
-    <title>Parash</title>
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon" />
     <meta
       name="description"
-      content="Here you will find all the info regarding me, my work, ways to contact me and also some of my own thoughts in the form of blogs."
+      content="Here you will find all the info regarding me, my work, ways to contact me and also some of my own thoughts in the form of blogs"
     />
+    <script src="javascript/main.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <title>Parash - Home</title>
   </head>
   <body>
-    <!------------ Header Section ------------>
+    <div class="top">
+      <p>Super work in progress design (never coming out of wip)</p>
+    </div>
     <header class="header">
+      <section id="home-section"></section>
       <nav class="nav">
-        <a href="/" class="logo" title="Parash"> Parash </a>
-        <ul class="menu">
-          <li>
-            <a href="#about" class="links">About</a>
+        <a
+          href="/"
+          class="logo"
+          onclick="changeTitleAndScroll(event, 'Parash - Home')"
+        >
+          <img src="images/icon.svg" alt="logo icon" class="image" />
+        </a>
+
+        <ul class="lists">
+          <li class="list">
+            <a
+              href="#about"
+              class="links"
+              onclick="changeTitle('Parash - About')"
+              >About</a
+            >
           </li>
-          <li>
-            <a href="#contact" class="links">Contact</a>
+          <li class="list">
+            <a
+              href="#"
+              class="links"
+              onclick="changeTitleAndScroll(event, 'Blog not here yet'); showAlert();"
+              >Blogs</a
+            >
           </li>
-          <li>
-            <a href="#" class="links">Blogs</a>
+
+          <li class="list">
+            <a
+              href="#contact"
+              class="links"
+              onclick="changeTitle('Parash - Contact')"
+              >Contact</a
+            >
           </li>
         </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
       </nav>
     </header>
-    <!------------ Body Section ------------>
-    <main class="body-container">
-      <div class="body">
-        <div class="bodytext">
-          <div class="text">Hello! My name is</div>
-          <div class="text" id="name">Parash Phuyel.</div>
-        </div>
-        <!------ Images ------>
-        <div class="image-pc">
-          <img
-            src="images/parash-removebg-preview.png"
-            alt="parash"
-            id="pcimg"
-          />
-        </div>
+    <main class="body">
+      <div class="body-container">
+        <p class="main-text" id="hello-my-name">
+          <span class="welcome">Welcome to my website. My name is</span>
+          <span class="main-text name" id="name"> Parash Phuyel</span>
+        </p>
+        <img
+          src="images/parash-body.png"
+          class="featured-image"
+          alt="featured image"
+        />
+        <img
+          src="images/parash-body.png"
+          class="phone-image"
+          alt="featured image"
+        />
       </div>
     </main>
     <!------------ About Section ------------>
-    <section class="aboutcontainer">
-      <div class="about" id="about">
+    <section class="aboutcontainer" id="about">
+      <div class="about">
         <div class="about-header">
           <p>About Me</p>
         </div>
@@ -80,11 +101,47 @@
       </div>
       <div class="contact-lists">
         <ul>
-          <li><a href="#" title="Facebook">Facebook</a></li>
-          <li><a href="#" title="Instagram">Instagram</a></li>
-          <li><a href="#" title="Mail Me">Email</a></li>
+          <li>
+            <a
+              href="https://facebook.com/parash.me"
+              target="_blank"
+              title="Facebook"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://instagram.com.parash.me"
+              title="Instagram"
+              target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:parashphuyal809@gmail.com"
+              title="Mail Me"
+              target="_blank"
+              >Email</a
+            >
+          </li>
         </ul>
       </div>
     </section>
+    <footer class="footer">
+      <div class="foot-container">
+        <p>&copy; Parash Phuyel</p>
+        <div class="link">
+          <a class="links" href="https://github.com/theparash" target="_blank"
+            >Github</a
+          >
+          <a
+            class="links"
+            href="mailto:parashphuyal809@gmail.com?subject=About the website.&body=Hey! I wanted to contact you through your website"
+            >eMail Me</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
