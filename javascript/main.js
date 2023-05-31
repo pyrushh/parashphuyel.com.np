@@ -6,7 +6,7 @@ function changeTitle(title) {
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.getElementById("name");
   const text = textElement.textContent;
-  const typingSpeed = 350; // Adjust typing speed (in milliseconds)
+  const typingSpeed = 300; // Adjust typing speed (in milliseconds)
 
   let charIndex = 0;
 
