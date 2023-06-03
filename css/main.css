@@ -57,7 +57,7 @@ html {
 }
 
 .image {
-  width: 60px;
+  width: 50px;
   border-radius: 5px;
   transition: all 0.3s;
 }
@@ -74,7 +74,7 @@ html {
 
 .list {
   font-family: var(--font-family);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
