@@ -2,7 +2,7 @@
 function changeTitle(title) {
   document.title = title;
 }
-//Typing animations (copy this if you want lol)
+//Typing animations
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.getElementById("name");
   const text = textElement.textContent;
