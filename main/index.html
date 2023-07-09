@@ -1,147 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/icon.svg" type="image/x-icon" />
+    <title>Parash</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Here you will find all the info regarding me, my work, ways to contact me and also some of my own thoughts in the form of blogs"
+      content="The website of Parash Phuyel where you will find stuffs about me."
     />
-    <script src="javascript/main.js"></script>
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/body.css" />
-    <title>Parash - Home</title>
+    <link rel="stylesheet" href="styles/aboutme.css" />
   </head>
   <body>
-    <!-- header starts -->
-    <header class="header">
-      <section id="home-section"></section>
-      <nav class="nav">
-        <a
-          href="/"
-          class="logo"
-          onclick="changeTitleAndScroll(event, 'Parash | Home')"
-        >
-          <img src="assets/icon.svg" alt="logo icon" class="logo-image" />
-        </a>
-
-        <ul class="lists">
-          <li class="list">
-            <a
-              href="#about"
-              class="links"
-              onclick="changeTitle('Parash | About')"
-            >
-              About
-            </a>
-          </li>
-          <li class="list">
-            <a
-              href="#"
-              class="links"
-              onclick="changeTitleAndScroll(event, 'Blog not here yet'); showAlert();"
-              >Blogs</a
-            >
-          </li>
-
-          <li class="list">
-            <a
-              href="#contact"
-              class="links"
-              onclick="changeTitle('Parash | Contact')"
-              >Contact</a
-            >
-          </li>
-        </ul>
+    <header id="header" class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            <img class="logo-img" src="assets/images/icon.svg" alt="Logo" />
+          </a>
+        </div>
+        <button type="button" class="nav-toggler">
+          <span class="bar"></span>
+        </button>
+        <div class="nav">
+          <ul class="link-container">
+            <li class="links">
+              <a
+                href="#home"
+                class="active"
+                title="Home"
+                onclick="scrollToSection('home')"
+              >
+                Home
+              </a>
+            </li>
+            <li class="links">
+              <a href="#about" title="About" onclick="scrollToSection('about')"
+                >About
+              </a>
+            </li>
+            <li class="links">
+              <a href="assets/cv/CV.pdf" title="Download Resume" download>
+                Resume
+              </a>
+            </li>
+            <li class="links">
+              <a
+                href="#contact"
+                title="Contact"
+                onclick="scrollToSection('contact')"
+                >Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <!-- header ends -->
-    <main class="body">
-      <div class="body-container">
-        <p class="main-text" id="hello-my-name">
-          <span class="welcome">Hey there! Its me your's truly</span>
-          <span class="main-text name" id="name"> Parash Phuyel</span>
-        </p>
-        <img
-          src="assets/parash-body.png"
-          class="featured-image"
-          alt="Featured Image"
-        />
-        <img
-          src="assets/parash-body.png"
-          class="phone-image"
-          alt="Featured Image"
-        />
+    <main id="home" class="body-container">
+      <div class="wrapper">
+        <div class="introduction">
+          <h1 class="main-introduction">
+            How do you do,<span> fellow&nbsp;kids?</span>
+          </h1>
+          <p class="home-about">
+            I am Parash and I am kinda not really a developer.
+            <br />
+            <br />
+            I am a <span>student</span> who has (nobody knows how) too much time
+            in his hands and nothing to be happy about except for trying random
+            hobbies.
+            <br />
+            <br />
+            I tried to dip my hands into website development just to make this
+            portfolio.🤷‍♂️
+          </p>
+        </div>
+        <div class="avatar">
+          <div class="avatar-image">
+            <img src="assets/images/icon.svg" alt="featured Avatar" />
+          </div>
+        </div>
       </div>
     </main>
-    <!------------ About Section ------------>
-    <section class="aboutcontainer" id="about">
-      <div class="about">
-        <div class="about-header">
-          <p>About Me</p>
+    <section id="about" class="about-container">
+      <div class="body-wrapper">
+        <div class="image">
+          <img
+            src="assets/images/parash-body.png"
+            alt="Image of Parash in a hospital desk writing medications"
+          />
         </div>
-        <div class="about-text">
-          <p>
-            My name is Parash Phuyal and I am a medical student currently not
-            doing anything significant.
+        <div class="about-me">
+          <h1 class="about-header">About Me</h1>
+          <p class="about-main">
+            My name is Parash Phuyel and I am a medical student studying in
+            <a href="https://khibiratnagar.edu.np/" target="_blank">
+              Koshi Health Institute.
+            </a>
             <br />
             <br />
-            I started growing intrest in making small websites when I stumbled
-            uopn a video of a guy making a portfolio website.
+            I was born and mostly raised in Kanepokhari, Morang, but currently
+            live in Biratnagar for my studies.
+            <br />
+            <br />
+            I studied in Adarsha English School from grade 1 to 6 and shifted to
+            Shree Janakalyan Sec. School and completed grade 10 there in 2019.
+            <br />
+            <br />
+            If you wish to see more info about my studies,
+            <a href="assets/cv/CV.pdf" title="Download Resume" download>
+              download and review my resume.
+            </a>
+            <br />
+            You can find more of my contact information there.
           </p>
         </div>
       </div>
     </section>
-    <!------------ Contact Section ------------>
-    <section class="contacts" id="contact">
-      <div class="contact-text">
-        <h1>Contact Me</h1>
-      </div>
-      <div class="contact-lists">
-        <ul>
-          <li>
-            <a
-              href="https://facebook.com/parash.me"
-              target="_blank"
-              title="Facebook"
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://instagram.com.parash.me"
-              title="Instagram"
-              target="_blank"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:parashphuyal809@gmail.com"
-              title="Mail Me"
-              target="_blank"
-              >Email</a
-            >
-          </li>
-        </ul>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="foot-container">
-        <p>&copy; Parash Phuyel</p>
-        <div class="link">
-          <a class="links" href="https://github.com/theparash" target="_blank"
-            >Github</a
-          >
+    <div class="contact">
+      <div id="contact" class="contact-container">
+        <div class="contact-header">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="contact-content">
           <a
-            class="links"
-            href="mailto:parashphuyal809@gmail.com?subject=Hello there!&body=parashphuyel.com.np"
-            >eMail Me</a
+            href="mailto:parashphuyal809@gmail.com?subject=Inquiry Through Website"
+            target="_blank"
           >
+            Email Me
+          </a>
+          <a href="https://facebook.com/parash.me" target="_blank">Facebook</a>
+          <a href="https://instagram.com/parash.me" target="_blank"
+            >Instagram
+          </a>
+          <a href="https://threads.net/@parash.me" target="_blank">Threads</a>
         </div>
       </div>
-    </footer>
+    </div>
+    <script src="javascript/script.js"></script>
   </body>
 </html>
