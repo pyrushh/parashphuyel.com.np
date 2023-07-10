@@ -1,148 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Parash</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="The website of Parash Phuyel where you will find stuffs about me."
-    />
-    <link
-      rel="shortcut icon"
-      href="assets/images/icon.svg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/body.css" />
-    <link rel="stylesheet" href="styles/aboutme.css" />
-  </head>
-  <body>
-    <header id="header" class="header">
-      <nav class="navbar">
-        <div class="logo">
-          <a href="#">
-            <img class="logo-img" src="assets/images/icon.svg" alt="Logo" />
-          </a>
-        </div>
-        <button type="button" class="nav-toggler">
-          <span class="bar"></span>
-        </button>
-        <div class="nav">
-          <ul class="link-container">
-            <li class="links">
-              <a
-                href="#home"
-                class="active"
-                title="Home"
-                onclick="scrollToSection('home')"
-              >
-                Home
-              </a>
-            </li>
-            <li class="links">
-              <a href="#about" title="About" onclick="scrollToSection('about')"
-                >About
-              </a>
-            </li>
-            <li class="links">
-              <a href="assets/cv/CV.pdf" title="Download Resume" download>
-                Resume
-              </a>
-            </li>
-            <li class="links">
-              <a
-                href="#contact"
-                title="Contact"
-                onclick="scrollToSection('contact')"
-                >Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main id="home" class="body-container">
-      <div class="wrapper">
-        <div class="introduction">
-          <h1 class="main-introduction">
-            How do you do,<span> fellow&nbsp;kids?</span>
-          </h1>
-          <p class="home-about">
-            I am Parash and I am kinda not really a developer.
-            <br />
-            <br />
-            I am a <span>student</span> who has (nobody knows how) too much time
-            in his hands and nothing to be happy about except for trying random
-            hobbies.
-            <br />
-            <br />
-            I tried to dip my hands into website development just to make this
-            portfolio.🤷‍♂️
-          </p>
-        </div>
-        <div class="avatar">
-          <div class="avatar-image">
-            <img src="assets/images/icon.svg" alt="featured Avatar" />
-          </div>
-        </div>
+
+<head>
+  <title>Parash</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The website of Parash Phuyel where you will find stuffs about me." />
+  <link rel="shortcut icon" href="assets/images/icon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/body.css" />
+  <link rel="stylesheet" href="styles/aboutme.css" />
+</head>
+
+<body>
+  <header id="header" class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img class="logo-img" src="assets/images/icon.svg" alt="Logo" />
+        </a>
       </div>
-    </main>
-    <section id="about" class="about-container">
-      <div class="body-wrapper">
-        <div class="image">
-          <img
-            src="assets/images/parash-body.png"
-            alt="Image of Parash in a hospital desk writing medications"
-          />
-        </div>
-        <div class="about-me">
-          <h1 class="about-header">About Me</h1>
-          <p class="about-main">
-            My name is Parash Phuyel and I am a medical student studying in
-            <a href="https://khibiratnagar.edu.np/" target="_blank">
-              Koshi Health Institute.
+      <button type="button" class="nav-toggler">
+        <span class="bar"></span>
+      </button>
+      <div class="nav">
+        <ul class="link-container">
+          <li class="links">
+            <a href="#home" class="active" title="Home" onclick="scrollToSection('home')">Home</a>
+          </li>
+          <li class="links">
+            <a href="#about" title="About" onclick="scrollToSection('about')">About</a>
+          </li>
+          <li class="links">
+            <a href="assets/cv/CV.pdf" title="Download Resume" download>Resume</a>
+          </li>
+          <li class="links">
+            <a href="#contact" title="Contact" onclick="scrollToSection('contact')">
+              Contact
             </a>
-            <br />
-            <br />
-            I was born and mostly raised in Kanepokhari, Morang, but currently
-            live in Biratnagar for my studies.
-            <br />
-            <br />
-            I studied in Adarsha English School from grade 1 to 6 and shifted to
-            Shree Janakalyan Sec. School and completed grade 10 there in 2019.
-            <br />
-            <br />
-            If you wish to see more info about my studies,
-            <a href="assets/cv/CV.pdf" title="Download Resume" download>
-              download and review my resume.
-            </a>
-            <br />
-            You can find more of my contact information there.
-          </p>
-        </div>
+          </li>
+        </ul>
       </div>
-    </section>
-    <div class="contact">
-      <div id="contact" class="contact-container">
-        <div class="contact-header">
-          <h1>Contact Me</h1>
-        </div>
-        <div class="contact-content">
-          <a
-            href="mailto:parashphuyal809@gmail.com?subject=Inquiry Through Website"
-            target="_blank"
-          >
-            Email Me
-          </a>
-          <a href="https://facebook.com/parash.me" target="_blank">Facebook</a>
-          <a href="https://instagram.com/parash.me" target="_blank"
-            >Instagram
-          </a>
-          <a href="https://threads.net/@parash.me" target="_blank">Threads</a>
+    </nav>
+  </header>
+
+  <!-- Main Body section starts -->
+
+  <main id="home" class="body-container">
+    <div class="wrapper">
+      <div class="introduction">
+        <h1 class="main-introduction">
+          How do you do,<span> fellow&nbsp;kids?</span>
+        </h1>
+        <p class="home-about">
+          I am Parash and I am kinda not really a developer.
+          <br />
+          <br />
+          I am a <span>student</span> who has (nobody knows how) too much time
+          in his hands and nothing to be happy about except for trying random
+          hobbies.
+          <br />
+          <br />
+          I tried to dip my hands into website development just to make this
+          portfolio.🤷‍♂️
+        </p>
+      </div>
+      <div class="avatar">
+        <div class="avatar-image">
+          <img src="assets/images/icon.svg" alt="featured Avatar" />
         </div>
       </div>
     </div>
-    <script src="javascript/script.js"></script>
-  </body>
+  </main>
+
+  <!-- About me sections starts -->
+
+  <section id="about" class="about-container">
+    <div class="body-wrapper">
+      <div class="image">
+        <img src="assets/images/parash-body.png" alt="Image of Parash in a hospital desk writing medications" />
+      </div>
+      <div class="about-me">
+        <h1 class="about-header">About Me</h1>
+        <!-- About me text -->
+        <p class="about-main">
+          My name is Parash Phuyel and I am a medical student studying in
+          <a href="https://khibiratnagar.edu.np/" target="_blank"> Koshi Health Institute.</a>
+          <br />
+          <br />
+          I was born and mostly raised in Kanepokhari, Morang, but currently
+          live in Biratnagar for my studies.
+          <br />
+          <br />
+          I studied in Adarsha English School from grade 1 to 6 and shifted to
+          Shree Janakalyan Sec. School and completed grade 10 there in 2019.
+          <br />
+          <br />
+          If you wish to see more info about my studies,
+          <a href="assets/cv/CV.pdf" title="Download Resume" download>
+            download and review my resume.
+          </a>
+          <br />
+          You can find more of my contact information there.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section starts(still got work to do) -->
+
+  <div class="contact">
+    <div id="contact" class="contact-container">
+      <div class="contact-header">
+        <h1>Contact Me</h1>
+      </div>
+      <div class="contact-content">
+        <a href="mailto:parashphuyal809@gmail.com?subject=Inquiry Through Website" target="_blank">
+          Email Me
+        </a>
+        <a href="https://facebook.com/parash.me" target="_blank">Facebook</a>
+        <a href="https://instagram.com/parash.me" target="_blank">Instagram</a>
+        <a href="https://threads.net/@parash.me" target="_blank">Threads</a>
+      </div>
+    </div>
+  </div>
+  <script src="javascript/script.js"></script>
+</body>
+
 </html>

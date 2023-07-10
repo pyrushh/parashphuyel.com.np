@@ -1,26 +1,14 @@
-.about-me a {
-  color: #ffa500;
-  text-decoration: underline;
-}
-.about-me p {
-  color: var(--text);
-  font-family: system-ui, -apple-system, sans-serif;
-  line-height: 1.4;
-}
-.about-me h1 {
-  font-size: 2rem;
-  color: var(--accent);
-}
 .about-container {
   padding-top: 50px;
-  background-color: var(--primary);
+  background: var(--gradient-about);
   height: 100vh;
-  /* width: 99vw; */
   display: flex;
   justify-content: space-between;
 }
+
 .body-wrapper {
-  max-width: 860px;
+  max-width: 800px;
+  padding-right: 3px;
   margin: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   height: 100%;
@@ -28,72 +16,93 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .image img {
   border-radius: 50%;
   background-color: var(--secondary-color);
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .about-me {
   width: 60%;
 }
+
+.about-me a {
+  color: #ffa500;
+  text-decoration: underline;
+}
+
+.about-me p {
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.2;
+}
+
+.about-me h1 {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
 .about-header {
   padding-bottom: 1.2rem;
 }
-@media screen and (max-width: 800px) {
-  .about-me {
-    padding: 0 0 0 7px;
-  }
-  .body-wrapper {
-    max-width: 700px;
-  }
-}
+
+
+
 @media screen and (max-width: 660px) {
   .about-container {
     height: 100vh;
   }
+
   .body-wrapper {
-    max-width: 1000px;
     flex-direction: column;
-    justify-content: center;
+    padding: 15% 0;
   }
+
   .about-header {
     text-align: center;
   }
+
   .about-me {
     width: 95%;
-    margin-bottom: 1rem;
   }
 
   .image img {
-    width: 190px;
-    height: 190px;
-    /* margin: 20px 0 10px 0; */
+    width: 200px;
+    height: 200px;
   }
 }
+
 @media screen and (max-width: 350px) {
   .about-container {
-    height: 120vh;
+    height: 100vh;
   }
+
+  .body-wrapper {
+    padding: 6% 0;
+  }
+
   .image img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
+
   .about-me p {
-    line-height: 1.1;
+    line-height: 1.2;
   }
 }
-@media screen and (max-height: 340px) {
-  .about-container {
-    height: 150vh;
-  }
-}
+
+
+
 .contact {
-  height: 100vh;
-  background-color: #4b6b79;
+  height: 70vh;
+  background: var(--gradient-contact);
+  ;
 }
+
 .contact-container {
+  padding: 8rem 0 3rem 0;
   max-width: 800px;
   height: 100%;
   margin: 0 auto;
@@ -101,6 +110,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .contact-header {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--text);
@@ -108,11 +118,13 @@
   font-size: 1.3rem;
   text-align: center;
 }
+
 .contact-content {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
+
 .contact a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000000;
@@ -121,10 +133,28 @@
   padding: 20px 30px;
   background-color: var(--accent);
   border-radius: 32px;
-  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s;
 }
+
+.contact a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--gradient);
+  transition: width 0.3s linear;
+  z-index: -1;
+}
+
+.contact-content a:hover::before {
+  width: 100%;
+}
+
 .contact a:hover {
-  transform: scale(1.2);
+  transform: scale(1);
   color: #ffffff;
-  background-color: #ffa500;
 }

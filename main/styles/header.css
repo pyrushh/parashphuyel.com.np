@@ -1,0 +1,137 @@
+.logo-img {
+  width: 50px;
+  height: 55px;
+}
+
+.navbar {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--gradient-header); 
+  line-height: 1.5;
+  transition: all 0.6s ease;
+}
+
+.scrolled {
+  background-color: #1d1726;
+}
+
+.header .logo,
+.header .nav {
+  padding: 0 15px;
+}
+
+.links {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.links a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--text);
+  padding: 10px 0;
+  transition: all 0.2s ease;
+}
+
+.links a.active,
+.links a:hover {
+  color: var(--accent);
+}
+
+.nav-toggler {
+  height: 34px;
+  width: 44px;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  display: none;
+  margin-right: 15px;
+}
+
+.bar {
+  height: 2px;
+  width: 20px;
+  background-color: var(--text);
+  display: block;
+  margin: auto;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-toggler.active span {
+  background-color: transparent;
+}
+
+.bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.bar::before {
+  transform: translateY(-6px);
+}
+
+.nav-toggler.active span::before {
+  transform: rotate(45deg);
+}
+
+.bar::after {
+  transform: translateY(6px);
+}
+
+.nav-toggler.active span::after {
+  transform: rotate(135deg);
+}
+
+@media (max-width: 600px) {
+  .nav-toggler {
+    display: block;
+  }
+
+  .logo-img {
+    width: 40px;
+  }
+
+  .header .nav {
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .header .nav.open {
+    visibility: visible;
+  }
+
+  .link-container {
+    padding: 12px 15px 0;
+    margin-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .links {
+    display: block;
+    margin: 0;
+  }
+}
