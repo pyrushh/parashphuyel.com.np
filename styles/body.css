@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@800&display=swap');
+
+.body-container {
+  background: var(--gradient);
+  padding-bottom: 10rem;
+
+}
+
+.wrapper {
+  padding: 7rem 5px 0 5px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduction {
+  padding: 0 8px;
+  width: 70%;
+}
+
+.main-introduction {
+  font-family: 'REM', sans-serif;
+  color: var(--text);
+  margin: 2rem 0;
+  font-size: 35px;
+  line-height: 1.8;
+}
+
+.introduction span {
+  color: #00b899;
+}
+
+.home-about {
+  color: var(--text);
+  line-height: 1.4;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.avatar-image img {
+  border-radius: 50%;
+  background-color: var(--accent);
+  width: 240px;
+  height: 240px;
+}
+
+.btn-cont {
+  padding-top: 1rem;
+  display: flex;
+
+}
+
+.btn {
+  margin-top: 8px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s;
+  color: var(--text);
+  border-radius: 50px;
+  text-align: center;
+  margin: 0 5px;
+  padding: 20px 20px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+  background: #8b008b;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.btn:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 18px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+  background: #00b899;
+}
+
+.btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.contact-btn {
+  background: #00b899;
+}
+
+.contact-btn:hover {
+  background: #8b008b;
+}
+
+@media screen and (max-width: 600px) {
+
+  .wrapper {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1px 0 1px;
+  }
+
+  .introduction {
+    width: 98%;
+  }
+
+  .home-about {
+    padding-bottom: 20px;
+  }
+
+  .main-introduction {
+    text-align: center;
+  }
+
+  .btn-cont {
+    justify-content: center;
+
+  }
+
+  .avatar-image img {
+    margin-top: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 335px) {
+  .wrapper {
+    padding-top: 1rem;
+  }
+
+  .btn-cont {
+    justify-content: center;
+
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 10px;
+  }
+
+  .btn:after {
+    top: 8px;
+  }
+
+
+  .avatar-image img {
+    width: 190px;
+    height: 190px;
+  }
+}

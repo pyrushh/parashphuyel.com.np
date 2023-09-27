@@ -1,6 +1,6 @@
 .logo-img {
   width: 50px;
-  height: 55px;
+  height: 50px;
 }
 
 .navbar {
@@ -9,20 +9,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+
 }
 
 .header {
   position: sticky;
   top: 0;
-  background: var(--gradient-header); 
+  z-index: 9999;
+  background: var(--gradient-header);
   line-height: 1.5;
   transition: all 0.6s ease;
 }
 
-.scrolled {
-  background-color: #1d1726;
-}
 
 .header .logo,
 .header .nav {
@@ -34,14 +32,18 @@
   margin-left: 40px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .links a {
-  font-family: "Plus Jakarta Sans", sans-serif;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-transform: capitalize;
   color: var(--text);
-  padding: 10px 0;
+  padding: 3px 0;
   transition: all 0.2s ease;
 }
 
@@ -52,23 +54,23 @@
 
 .nav-toggler {
   height: 34px;
-  width: 44px;
+  width: 34px;
   background-color: transparent;
   border-radius: 4px;
   cursor: pointer;
   border: none;
   display: none;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .bar {
-  height: 2px;
+  height: 3px;
   width: 20px;
   background-color: var(--text);
   display: block;
   margin: auto;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-out;
 }
 
 .nav-toggler.active span {
@@ -103,9 +105,15 @@
   transform: rotate(135deg);
 }
 
-@media (max-width: 600px) {
+
+
+@media (max-width: 700px) {
   .nav-toggler {
     display: block;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
   }
 
   .logo-img {
@@ -117,7 +125,7 @@
     max-height: 0px;
     overflow: hidden;
     visibility: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
   }
 
   .header .nav.open {
@@ -131,6 +139,8 @@
   }
 
   .links {
+
+    padding: 20px 0;
     display: block;
     margin: 0;
   }

@@ -17,26 +17,26 @@
   <header id="header" class="header">
     <nav class="navbar">
       <div class="logo">
-        <a href="#">
+        <a href="#" onclick="scrollToSection('home')">
           <img class="logo-img" src="assets/images/icon.svg" alt="Logo" />
         </a>
       </div>
       <button type="button" class="nav-toggler">
         <span class="bar"></span>
       </button>
-      <div class="nav">
+      <div class="nav" id="nav">
         <ul class="link-container">
           <li class="links">
-            <a href="#home" class="active" title="Home" onclick="scrollToSection('home')">Home</a>
+            <a href="#home" title="Home" id="homenav link" onclick="scrollToSection('home')">Home</a>
           </li>
           <li class="links">
-            <a href="#about" title="About" onclick="scrollToSection('about')">About</a>
+            <a href="#about" title="About" id="aboutnav link" onclick="scrollToSection('about')">About</a>
           </li>
           <li class="links">
-            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" title="Download Resume">Resume</a>
+            <a href="assets/cv/CV.pdf" id="cvnav link" target="_blank" title="See Resume">Resume</a>
           </li>
           <li class="links">
-            <a href="#contact" title="Contact" onclick="scrollToSection('contact')">
+            <a href="#contact" title="Contact" id="contactnav link" onclick="scrollToSection('contact')">
               Contact
             </a>
           </li>
@@ -52,19 +52,24 @@
       <div class="introduction">
         <h1 class="main-introduction">
           How do you do,<span> fellow&nbsp;kids?</span>
+
         </h1>
         <p class="home-about">
-          I am Parash and I am kinda not really a developer.
+          I am Parash and I am a <span id="element"></span>
           <br />
-          <br />
-          I am a <span>computer nerd</span> who has (nobody knows how) too much time
-          in his hands and nothing to be happy about except for trying random
-          hobbies and playing minecraft.
-          <br />
-          <br />
-          I tried to dip my hands into website development just to make this
-          portfolio.🤷‍♂️
+          <br />I am a guy who has too much time in his hands
+          <br /> and nothing to be happy about except for trying random
+          hobbies & trying to dip his hands into website development.
         </p>
+        <div class="btn-cont">
+          <a href="#about" title="About" class="contact-btn btn" id="aboutnav link"
+            onclick="scrollToSection('about')">About Page</a>
+
+          <a href="https://github.com/pyrushh?tab=repositories" target="_blank" rel="noreferrer"
+            class="project-btn btn">
+            Projects
+          </a>
+        </div>
       </div>
       <div class="avatar">
         <div class="avatar-image">
@@ -85,12 +90,14 @@
         <h1 class="about-header">About Me</h1>
         <!-- About me text -->
         <p class="about-main">
-          My name is Parash Phuyel and I am a computer nerd as well as a
-          <a href="https://minecraft.net/" target="_blank"> pro Minecraft player.</a>
+          My name is Parash Phuyel and I am a medical student studying in
+          <a href="https://khibiratnagar.edu.np/" target="_blank" rel="noreferrer">
+
+            Koshi Health Institute.
+          </a>
           <br />
           <br />
-          I was born and mostly raised in Kanepokhari, Morang, but currently
-          live in Biratnagar..
+          I was born and raised in Kanepokhari, Morang.
           <br />
           <br />
           I studied in Adarsha English School from grade 1 to 6 and shifted to
@@ -98,12 +105,19 @@
           <br />
           <br />
           If you wish to see more info about my studies,
-          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" title="Its a rickroll link.">
+          <a href="assets/cv/CV.pdf" title="Download Resume" download>
             download and review my resume.
           </a>
           <br />
           You can find more of my contact information there.
+          <br>
+          <br>
+          You can also <a href="mailto:parashphuyal809@gmail.com?subject=Inquiry Through Website" rel="noreferrer"
+            target="_blank" title="Contact" id="link" onclick="scrollToSection('contact')">
+            Send me an E-Mail
+          </a>
         </p>
+
       </div>
     </div>
   </section>
@@ -116,15 +130,42 @@
         <h1>Contact Me</h1>
       </div>
       <div class="contact-content">
-        <a href="mailto:parashphuyal809@gmail.com?subject=Inquiry Through Website" target="_blank">
+        <a class="contact-btns btns" href="mailto:parashphuyal809@gmail.com?subject=Inquiry Through Website"
+          rel="noreferrer" target="_blank">
           Email Me
         </a>
-        <a href="https://facebook.com/parash.me" target="_blank" title="Facebook">Facebook</a>
-        <a href="https://instagram.com/parash.me" target="_blank" title="Instagram">Instagram</a>
-        <a href="https://threads.net/@parash.me" target="_blank" title="Threads">Threads</a>
+        <a class="contact-btns btns" href="https://facebook.com/parash.me" target="_blank" rel="noreferrer">
+          Facebook
+        </a>
+        <a class="contact-btns btns" href="https://instagram.com/parash.me" target="_blank" rel="noreferrer">
+          Instagram
+        </a>
+        <a class="contact-btns btns" href="https://threads.net/@parash.me" target="_blank" rel="noreferrer">
+          Threads
+        </a>
       </div>
     </div>
   </div>
+
+
+
+
+
+  </script>
+  <!-- Using Typed.js by https://github.com/mattboldt/typed.js/  -->
+  <script src="javascript/typed.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: [' Medical Professional..', ' Web Developer'],
+      typeSpeed: 70,
+      loop: true,
+      backSpeed: 50,
+      backDelay: 1700
+
+    });
+  </script>
   <script src="javascript/script.js"></script>
 </body>
 
