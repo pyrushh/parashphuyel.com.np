@@ -3,7 +3,7 @@
 
 .about-container {
   background: var(--gradient-about);
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
 }
 
 .body-wrapper {
@@ -34,6 +34,7 @@
 }
 
 .about-main {
+  padding-bottom: 2rem;
   color: var(--text);
   font-family: 'DM Sans', sans-serif;
   line-height: 1.4;
@@ -91,12 +92,12 @@
 
 .contact {
   background: var(--gradient-contact);
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
 
 }
 
 .contact-container {
-  padding: 7rem 5px 0 5px;
+  padding: 4rem 5px 0 5px;
   max-width: 900px;
   margin: 0 auto;
   display: flex;

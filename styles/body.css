@@ -3,7 +3,7 @@
 
 .body-container {
   background: var(--gradient);
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
 
 }
 
@@ -34,6 +34,7 @@
 }
 
 .home-about {
+
   color: var(--text);
   line-height: 1.4;
   font-family: 'DM Sans', sans-serif;

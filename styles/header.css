@@ -4,7 +4,7 @@
 }
 
 .navbar {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -13,18 +13,18 @@
 }
 
 .header {
+  padding-top: 5px;
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 50;
   background: var(--gradient-header);
-  line-height: 1.5;
-  transition: all 0.6s ease;
+  transition: all 0.5s ease;
 }
 
 
 .header .logo,
 .header .nav {
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 .links {
@@ -37,13 +37,11 @@ a {
 }
 
 .links a {
-  display: block;
   font-size: 1.2rem;
+  display: block;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-transform: capitalize;
+  font-family: system-ui;
   color: var(--text);
-  padding: 3px 0;
   transition: all 0.2s ease;
 }
 
@@ -52,96 +50,28 @@ a {
   color: var(--accent);
 }
 
-.nav-toggler {
-  height: 34px;
-  width: 34px;
-  background-color: transparent;
-  border-radius: 4px;
-  cursor: pointer;
-  border: none;
-  display: none;
-  margin-right: 20px;
-}
-
-.bar {
-  height: 3px;
-  width: 20px;
-  background-color: var(--text);
-  display: block;
-  margin: auto;
-  position: relative;
-  transition: all 0.3s ease-out;
-}
-
-.nav-toggler.active span {
-  background-color: transparent;
-}
-
-.bar::before,
-.bar::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--text);
-  transition: all 0.3s ease;
-}
-
-.bar::before {
-  transform: translateY(-6px);
-}
-
-.nav-toggler.active span::before {
-  transform: rotate(45deg);
-}
-
-.bar::after {
-  transform: translateY(6px);
-}
-
-.nav-toggler.active span::after {
-  transform: rotate(135deg);
-}
-
-
 
 @media (max-width: 700px) {
-  .nav-toggler {
-    display: block;
-  }
-
-  .navbar {
-    flex-wrap: wrap;
-  }
-
-  .logo-img {
-    width: 40px;
-  }
-
-  .header .nav {
-    width: 100%;
-    max-height: 0px;
-    overflow: hidden;
-    visibility: hidden;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .header .nav.open {
-    visibility: visible;
-  }
 
   .link-container {
-    padding: 12px 15px 0;
-    margin-top: 12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
   }
 
   .links {
-
-    padding: 20px 0;
+    padding: 0px 15px;
     display: block;
-    margin: 0;
+    margin: 0 auto;
   }
+
+  .resume {
+    display: none;
+  }
+}
+
+@media (max-width:350px) {
+  .links {
+    padding: 0px 6px;
+  }
+
+
 }
