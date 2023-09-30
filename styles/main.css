@@ -33,12 +33,13 @@
   --body-bg: #f8f8f8;
   --neutral-dark-color: #333333;
   --gradient: linear-gradient(to left, #221437, #1a1328);
-  --gradient-header:linear-gradient(to right, #16161b, #221437, #1a1328);
-  --gradient-about:linear-gradient(to right, #221437, #16161b);
-  --gradient-contact:linear-gradient(to right, #1a1328, #221437, #16161b);
+  --gradient-header: linear-gradient(to right, #16161b, #221437, #1a1328);
+  --gradient-about: linear-gradient(to right, #221437, #16161b);
+  --gradient-contact: linear-gradient(to right, #1a1328, #221437, #16161b);
 }
 
 * {
+  overflow-x: hidden;
   box-sizing: border-box;
   margin: 0;
   padding: 0;

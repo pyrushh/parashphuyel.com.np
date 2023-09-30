@@ -3,11 +3,11 @@
 
 .about-container {
   background: var(--gradient-about);
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 
 .body-wrapper {
-  padding: 7rem 5px 0 5px;
+  padding: 8rem 5px 0 5px;
   max-width: 900px;
   margin: 0 auto;
   display: flex;
@@ -92,12 +92,12 @@
 
 .contact {
   background: var(--gradient-contact);
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 
 }
 
 .contact-container {
-  padding: 4rem 5px 0 5px;
+  padding: 8rem 5px 0 5px;
   max-width: 900px;
   margin: 0 auto;
   display: flex;
@@ -168,6 +168,10 @@
 }
 
 @media (max-width:600px) {
+  .contact {
+    padding-bottom: 5rem;
+  }
+
   .contact-container {
     padding: 4rem 1px 0 1px;
   }
