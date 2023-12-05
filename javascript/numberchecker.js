@@ -2,11 +2,15 @@ const loader = document.querySelector(".loader");
 const result = document.getElementById("result");
 const checkButton = document.getElementById("check-button");
 const numberInput = document.getElementById("number-input");
+let paste = document.getElementById("paste");
 
 // pressing the paste button pasted from your clipboard
-let paste = document.getElementById("paste");
+paste.addEventListener("click", async () => {
+  const READ = await navigator.clipboard.readText();
+  numberInput.value = READ;
+});
 paste.addEventListener("click", () => {
-  alert("clicked");
+  console.log("clicked");
 });
 
 window.addEventListener("load", () => {
