@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=REM:wght@800&display=swap');
 
 .about-container {
-  background: var(--gradient-about);
+  background: var(--background);
   padding-bottom: 8rem;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .about-me a {
-  color: var(--accent);
+  color: var(--secondary);
   text-decoration: underline;
 }
 
@@ -91,7 +91,7 @@
 
 
 .contact {
-  background: var(--gradient-contact);
+  background: var(--background);
   padding-bottom: 8rem;
 
 }
@@ -133,7 +133,7 @@
   margin: 0 5px;
   padding: 20px 20px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
-  background: #8b008b;
+  background: var(--primary);
   font-size: 0.92rem;
   text-transform: uppercase;
   font-family: 'DM Sans', sans-serif;
@@ -151,7 +151,7 @@
 .btns:hover {
   padding-right: 24px;
   padding-left: 8px;
-  background: #00b899;
+  background:var(--secondary);
 }
 
 .btns:hover:after {
@@ -160,11 +160,11 @@
 }
 
 .contact-btn {
-  background: #00b899;
+  background: var(--secondary);
 }
 
 .contact-btn:hover {
-  background: #8b008b;
+  background: var(--accent);
 }
 
 @media (max-width:600px) {
