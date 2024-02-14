@@ -21,7 +21,7 @@
 }
 
 :root {
-  /* --background: #1d1726;
+  --background: #1d1726;
   --text: #ffffff;
   --primary: #1a1328;
   --secondary: #edf3f8;
@@ -31,12 +31,7 @@
   --primary-color: #221437;
   --secondary-color: #8b008b;
   --body-bg: #f8f8f8;
-  --neutral-dark-color: #333333; */
-  --text: #040316;
-  --background: #edecfe;
-  --primary: #4c38cc;
-  --secondary: #ccf08e;
-  --accent: #168d41;
+  --neutral-dark-color: #333333;
   --gradient: linear-gradient(to left, #221437, #1a1328);
   --gradient-header: linear-gradient(to right, #16161b, #221437, #1a1328);
   --gradient-about: linear-gradient(to right, #221437, #16161b);

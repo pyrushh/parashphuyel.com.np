@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=REM:wght@800&display=swap');
 
 .body-container {
-  /* background: var(--gradient); */
-  background: var(--background);
+  background: var(--gradient);
   padding-bottom: 8rem;
 
 }
@@ -31,7 +30,7 @@
 }
 
 .introduction span {
-  color: var(--accent);
+  color: #00b899;
 }
 
 .home-about {
@@ -43,7 +42,7 @@
 
 .avatar-image img {
   border-radius: 50%;
-  background-color: var(--secondary);
+  background-color: var(--accent);
   width: 240px;
   height: 240px;
 }

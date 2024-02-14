@@ -18,8 +18,7 @@
   top: 0;
   z-index: 50;
   width: 100%;
-  /* background: var(--gradient-header); */
-  background: var(--background);
+  background: var(--gradient-header);
   transition: all 0.5s ease;
 }
 
