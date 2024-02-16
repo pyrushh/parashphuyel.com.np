@@ -8,42 +8,33 @@
   <meta name="description" content="The website of Parash Phuyel where you will find stuffs about me." />
   <link rel="shortcut icon" href="assets/images/icon.svg" type="image/x-icon" />
   <meta name="google-site-verification" content="YwGiNxoAFXMUEmwrWPBDsavZVu_5BhpPBBHByy6WrVI" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css" />
   <link rel="stylesheet" href="styles/header.css" />
   <link rel="stylesheet" href="styles/body.css" />
-  <link rel="stylesheet" href="styles/aboutme.css" />
+  <!-- <link rel="stylesheet" href="styles/aboutme.css" /> -->
 </head>
 
 <body>
   <!-- Header Section -->
-  <header id="header" class="header">
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#" onclick="scrollToSection('home')">
-          <img class="logo-img" src="assets/images/icon.svg" alt="Logo" />
-        </a>
-      </div>
+  <nav>
+    <div class="nav-cont">
+      <span> <a href="#" id="head">Parash</a></span>
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="CV.pdf">Get CV</a></li>
 
-      <div class="nav" id="nav">
-        <ul class="link-container">
-          <li class="links">
-            <a href="#home" title="Home" id="homenav link" onclick="scrollToSection('home')">Home</a>
-          </li>
-          <li class="links">
-            <a href="#about" title="About" id="aboutnav link" onclick="scrollToSection('about')">About</a>
-          </li>
-          <li class="links resume">
-            <a href="assets/cv/CV.pdf" id="link" target="_blank" title="See Resume">Resume</a>
-          </li>
-          <li class="links">
-            <a href="#contact" title="Contact" id="contactnav link" onclick="scrollToSection('contact')">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Main Body section starts -->
 
@@ -51,121 +42,40 @@
     <div class="wrapper">
       <div class="introduction">
         <h1 class="main-introduction">
-          How do you do,<span> fellow&nbsp;kids?</span>
-
+          How do you do, <a href=""><span> fellow&nbsp;kids?</span></a>
         </h1>
+
         <p class="home-about">
-          I am Parash and I am a <span id="element"></span>
+          Hi, I am <span id="span"></span> and I am a
+          <a target="_blank" style="text-decoration: underline;"
+            href="https://www.collegesnepal.com/ctevt/pcl-general-medicine/">Health
+            Professional.</a>
           <br />
-          <br />I am a guy who has too much time in his hands
-          <br /> and nothing to be happy about except for trying random
-          hobbies & trying to dip his hands into website development.
+          I'm a dedicated Health Professional with a passion for continuous growth and committed to delivering top-notch
+          care.
+          <br />
+          Beyond work, I enjoy exploring various hobbies and delving into website development.
         </p>
+
         <div class="btn-cont">
-          <a href="assets/cv/CV.pdf" title="Download Resume" target="_blank" class="contact-btn btn" id="link">Download
+          <a href="CV.pdf" title="Resume" target="_blank" class="primary-btn btn" id="link">Download
             Resume</a>
 
-          <a href="#contact" title="Contact" id="contactnav link" onclick="scrollToSection('contact')" rel="noreferrer"
-            class="project-btn btn">
+          <a target="_blank" href="mailto:parashphuyal809@gmail.com?subject=Inqueiry!" title="Contact"
+            id="contactnav link" class="contact-btn btn">
             Contact Me
           </a>
         </div>
       </div>
       <div class="avatar">
         <div class="avatar-image">
-          <img src="assets/images/icon.svg" alt="featured Avatar" />
+          <img src="assets/images/parash-body.webp" alt="Parash in a desk writing medications" />
         </div>
       </div>
     </div>
   </main>
 
-  <!-- About me sections starts -->
-
-  <section id="about" class="about-container">
-    <div class="body-wrapper">
-      <div class="image">
-        <img src="assets/images/parash-body.webp" alt="Image of Parash in a hospital desk writing medications" />
-      </div>
-      <div class="about-me">
-        <h1 class="about-header">About Me</h1>
-        <!-- About me text -->
-        <p class="about-main">
-          My name is Parash Phuyel and I am a medical student studying in
-          <a href="https://khibiratnagar.edu.np/" target="_blank" rel="noreferrer">
-
-            Koshi Health Institute.
-          </a>
-          <br />
-          <br />
-          I was born and raised in Kanepokhari, Morang.
-          <br />
-          <br />
-          I studied in Adarsha English School from grade 1 to 6 and shifted to
-          Shree Janakalyan Sec. School and completed grade 10 there in 2019.
-          <br />
-          <br />
-          If you wish to see more info about my studies,
-          <a href="assets/cv/CV.pdf" title="Download Resume" download>
-            download and review my resume.
-          </a>
-          <br />
-          You can find more of my contact information there.
-          <br>
-          <br>
-          You can also <a href="mailto:parashphuyal809@gmail.com?subject=Inquiry Through Website" rel="noreferrer"
-            target="_blank" title="Contact" id="link" onclick="scrollToSection('contact')">
-            Send me an E-Mail
-          </a>
-        </p>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section starts(still got work to do) -->
-
-  <div class="contact">
-    <div id="contact" class="contact-container">
-      <div class="contact-header">
-        <h1>Contact Me</h1>
-      </div>
-      <div class="contact-content">
-        <a class="contact-btns btns" href="mailto:parashphuyal809@gmail.com?subject=Inquiry Through Website"
-          rel="noreferrer" target="_blank">
-          Email Me
-        </a>
-        <a class="contact-btns btns" href="https://facebook.com/parash.me" target="_blank" rel="noreferrer">
-          Facebook
-        </a>
-        <a class="contact-btns btns" href="https://instagram.com/parash.me" target="_blank" rel="noreferrer">
-          Instagram
-        </a>
-        <a class="contact-btns btns" href="https://threads.net/@parash.me" target="_blank" rel="noreferrer">
-          Threads
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-
-
   <!-- Javascript -->
-  </script>
-  <!-- Using Typed.js by https://github.com/mattboldt/typed.js/  -->
-  <script src="javascript/typed.js"></script>
-
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: [' Medical Professional..', ' Web Developer...', 'Wrestling Enthusiast...'],
-      typeSpeed: 70,
-      loop: true,
-      backSpeed: 50,
-      backDelay: 700
-
-    });
-  </script>
   <script src="javascript/script.js"></script>
 </body>
 

@@ -1,42 +1,39 @@
-//scroll
-function scrollToSection(sectionId) {
-  const section = document.getElementById(sectionId);
-  section.scrollIntoView({ behavior: "smooth" });
+const mainMenu = document.querySelector(".mainMenu");
+const closeMenu = document.querySelector(".closeMenu");
+const openMenu = document.querySelector(".openMenu");
+const menu_items = document.querySelectorAll("nav .mainMenu li a");
 
-  event.preventDefault(); // Prevent default anchor behavior
+openMenu.addEventListener("click", show);
+closeMenu.addEventListener("click", close);
+
+// close menu when you click on a menu item
+menu_items.forEach((item) => {
+  item.addEventListener("click", function () {
+    close();
+  });
+});
+
+function show() {
+  mainMenu.style.display = "flex";
+  mainMenu.style.top = "0";
 }
+function close() {
+  mainMenu.style.top = "-150%";
+}
+const varName = "Parash";
+const replace = document.getElementById("span");
+
+function dk() {
+  replace.innerText = varName;
+  console.log("replace");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  dk();
+});
+
+const header = document.getElementById("head");
 window.onload = function () {
-  document.title = "Parash | Home";
+  header.innerText = varName;
+  document.title = varName + " | Home";
 };
-
-// Function to change the page title based on the section in view
-function changeTitleOnScroll() {
-  var homeSection = document.getElementById("home");
-  var aboutSection = document.getElementById("about");
-  var contactSection = document.getElementById("contact");
-
-  var scrollTop = window.scrollY;
-
-  if (
-    scrollTop >= homeSection.offsetTop &&
-    scrollTop < aboutSection.offsetTop
-  ) {
-    document.title = "Parash | Home";
-  } else if (
-    scrollTop >= aboutSection.offsetTop &&
-    scrollTop < contactSection.offsetTop
-  ) {
-    document.title = "Parash | About";
-  } else if (scrollTop >= contactSection.offsetTop) {
-    document.title = "Parash | Contact";
-  } else {
-    // If none of the sections are in view, use the default title
-    document.title = "Parash | Home";
-  }
-}
-
-// Add a scroll event listener to invoke the title change function
-window.addEventListener("scroll", changeTitleOnScroll);
-
-// Run the function once to set the initial title based on the page load position
-changeTitleOnScroll();

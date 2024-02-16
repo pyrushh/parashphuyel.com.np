@@ -1,82 +1,88 @@
-.logo-img {
-  width: 50px;
-  height: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+nav {
+  position: sticky !important;
+  top: 0;
+  box-shadow: var(--shadow);
+  background: var(--background);
+  color: var(--primary);
 }
 
-.navbar {
-  max-width: 900px;
+.nav-cont {
+  padding: var(--padding);
+  max-width: 1000px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
-
-.header {
-  padding-top: 5px;
-  position: fixed;
-  top: 0;
-  z-index: 50;
-  width: 100%;
-  background: var(--gradient-header);
-  transition: all 0.5s ease;
+nav span {
+  font-weight: 500;
+  font-size: 2.2rem;
 }
-
-
-.header .logo,
-.header .nav {
-  padding: 0 5px;
-}
-
-.links {
-  display: inline-block;
-  margin-left: 40px;
-}
-
 a {
-  text-decoration: none;
-}
-
-.links a {
-  font-size: 1.2rem;
-  display: block;
-  font-weight: 600;
-  font-family: system-ui;
-  color: var(--text);
-  transition: all 0.2s ease;
-}
-
-.links a.active,
-.links a:hover {
+  font-family: "Poppins";
   color: var(--accent);
 }
-
-
-@media (max-width: 700px) {
-
-  .link-container {
-    display: flex;
-  }
-
-  .links {
-    padding: 0px 15px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .links a {
-    font-size: 1rem;
-  }
-
-  .resume {
+.mainMenu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+.mainMenu li a:hover,
+.mainmenu li a:focus {
+  color: var(--accent);
+}
+.openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+.mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--text);
+    transition: top 0.3s ease 0s;
     display: none;
   }
-}
-
-@media (max-width:350px) {
-  .links {
-    padding: 0px 6px;
+  .mainMenu li a {
+    color: var(--background);
   }
-
-
+  .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .openMenu {
+    display: block;
+  }
 }
